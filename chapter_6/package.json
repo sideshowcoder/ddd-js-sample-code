@@ -1,0 +1,15 @@
+{
+  "name": "chapter_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "integration_sample.js",
+  "scripts": {
+    "notifier": "./node_modules/.bin/mocha notifier.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4"
+  }
+}

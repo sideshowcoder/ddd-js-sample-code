@@ -1,0 +1,15 @@
+{
+  "name": "sinon_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sinon_example.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha sinon_example.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4"
+  }
+}

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        var checkMeBox = document.getElementById("check-me")
+        var disableMeBtn = document.getElementById("disable-me")
+
+        function checkBoxHandler() {
+          if(checkMeBox.checked) {
+            disableMeBtn.removeAttribute("disabled")
+          } else {
+            disableMeBtn.setAttribute("disabled", "true")
+          }
+        }
+				
+				checkBoxHandler()
+        checkMeBox.onclick = checkBoxHandler
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <label>
+        Check Me: <input type="checkbox" id="check-me"></input>
+      </label>
+      <button id="disable-me">
+        I can be clicked if you checked the box
+      </button>
+    </form>
+  </body>
+
+</html>

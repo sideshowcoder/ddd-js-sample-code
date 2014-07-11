@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inmatr</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">
+        <h1>Inmatr</h1>
+
+        <p>You currently have <%= dungeon.free %> of <%= dungeon.cells %> cells
+        available.</p>
+      </div>
+
+      <form action="/cells/book" method="post">
+        <select name="cells">
+          <% for(var i = 1; i < 11; i++) { %>
+          <option value="<%= i %>"><%= i %></option>
+          <% } %>
+        </select>
+        <button type="submit" name="book" value="book">Book cells</button>
+        <button type="submit" name="free" value="free">Free cells</button>
+      </form>
+    </div>
+
+  </body>
+</html>

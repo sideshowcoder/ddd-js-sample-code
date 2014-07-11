@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/jquery.min.js"></script>
+    <script src="/jquery.pjax.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document).pjax('a', '#container')
+        var date = new Date()
+        $("#clock").html(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds())
+      })
+    </script>
+
+  </head>
+  <body>
+    <h1>About Rambo</h1>
+    <div id="container">
+      Go to <a href="/rambo-5">Rambo 5</a>.
+    </div>
+    <div>This page rendered at: <span id="clock"></span></div>
+  </body>
+</html>

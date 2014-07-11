@@ -1,0 +1,14 @@
+{
+  "name": "ember-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nws"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nws": "^0.6.1"
+  }
+}
